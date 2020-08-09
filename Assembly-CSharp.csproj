@@ -65,8 +65,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawner.cs" />
     <Compile Include="Assets\Scripts\TriggerChecker.cs" />
+    <Compile Include="Assets\Scripts\UiManager.cs" />
+    <None Include="Assets\Fonts\Roboto (1)\LICENSE.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/MyUnityProjects/Zig_Zag_Ball/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

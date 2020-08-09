@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
+    public GameObject particle;
     [SerializeField]
     private int speed;
 
@@ -62,4 +63,17 @@ public class BallController : MonoBehaviour
             rb.velocity = new Vector3(0, 0, speed);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if(other.gameObject.tag == "Diamond")
+        {
+            GameObject part = Instantiate(particle, other.transform.position, Quaternion.identity) as GameObject;
+            Destroy(other.gameObject);
+            Destroy(part, 1f);
+            
+        }
+    }
+
 }
